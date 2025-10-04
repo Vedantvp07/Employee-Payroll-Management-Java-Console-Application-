@@ -1,6 +1,6 @@
 import java.util.*;
 
-// ---------- Abstract Base Class ----------
+//Abstract Base Class
 abstract class Employee {
     private String name;
     private int id;
@@ -20,7 +20,7 @@ abstract class Employee {
     }
 }
 
-// ---------- Full-Time Employee ----------
+// Full-Time Employee 
 class FullTimeEmployee extends Employee {
     private double monthlySalary;
     public FullTimeEmployee(String name, int id, double monthlySalary) {
@@ -33,7 +33,7 @@ class FullTimeEmployee extends Employee {
     }
 }
 
-// ---------- Part-Time Employee ----------
+// Part-Time Employee 
 class PartTimeEmployee extends Employee {
     private int hoursWorked;
     private double hourlyRate;
@@ -48,7 +48,7 @@ class PartTimeEmployee extends Employee {
     }
 }
 
-// ---------- Payroll System ----------
+// Payroll System
 class PayrollSystem {
     private ArrayList<Employee> employeeList = new ArrayList<>();
 
@@ -82,7 +82,7 @@ class PayrollSystem {
     }
 }
 
-// ---------- Main (Menu-Driven) ----------
+//Main (Menu-Driven)
 public class EmployeePayrollMainC {
     private static final Scanner sc = new Scanner(System.in);
     private static final PayrollSystem payroll = new PayrollSystem();
